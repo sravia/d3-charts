@@ -736,3 +736,43 @@ ul.style3 .first {
 		padding: 5em 0em;
 		background: #FFF
 	}	
+
+.\33 u {
+	width: 45%;
+	margin-left:20px;
+}
+
+.dc-data-count{
+	width:100px;
+}
+
+.input-wrapper {
+	width: 250px;
+	border: 0!important;
+	margin-left:-35px;
+}
+
+.left {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin: 23px
+}
+
+.right img{
+	height: 100px;
+}
+
+#logo{
+	display:inline-block;
+}
+.right{
+	display: inline-block;
+	float: right;
+}
+
+div#header{
+	background: #f7f7f9;
+	border: 1px solid #e1e1e8;
+}

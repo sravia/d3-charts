@@ -86,7 +86,7 @@ function makeGraphs(error, apiData) {
 	var dim = ndx.dimension(function(r) { return r.a; });
 	var sidewaysGroup = regroup(dim, ['s3', 'aws_iot','greengrass','aws_lambda','step_function','aws_sns','route_53','dynamo_kb','kineses']);
 	var sidewaysRow = dc.rowChart('#resource-chart')
-        .width(350).height(200)
+        .width(500).height(400)
         .dimension(dim)
         .group(sidewaysGroup)
         .elasticX(true);
@@ -102,7 +102,8 @@ function makeGraphs(error, apiData) {
 		.valueAccessor(function(d){return d*multiplicationFactor; })
 		.group(messageCount)
 
-	dateChart.height(220)
+	dateChart
+		.width(600).height(400)
 		.margins({top: 10, right: 50, bottom: 30, left: 100})
 		.dimension(minutesDimension)
 		.group(messageGroup)

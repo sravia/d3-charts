@@ -33,21 +33,29 @@
 	<div id="wrapper">
 		
 		<div id="header">
-			<div class="container"> 
-				<div id="logo">
-					<h1><a href="#">Analytics Dashboard</a></h1>
-				</div>
+			<div class="left">
+					<img src="http://awsmedia.s3.amazonaws.com/AWS_Logo_PoweredBy_127px.png"/>
+			</div>
+			<div id="logo">
+				<h1><a href="#">AWS IOT CONNECTED FACTORY DASHBOARD</a></h1>
+			</div>
+			<div class="right">
+				<img src="http://awsmedia.s3.amazonaws.com/AWS_Logo_PoweredBy_127px.png"/>
 			</div>
 		</div>
 		
 		<div id="page" style="margin-top:-61px;">
 			<div class="container">
 				<div class="row">
-					<div class="2u chart-wrapper" data-step="1" style="font-weight: normal" data-position="right" id="menuselect" style="background-color: #33CC99; height: 60px;">
-						<strong>Sensor count</strong>
-						<input type=text value="1000" name="sensors" class="sensors" />	
-						<strong>Message count</strong>	
-						<input type=text value="1" name="messages" class="messages" />									
+					<div class="2u chart-wrapper input-wrapper" data-step="1" style="font-weight: normal" data-position="right" id="menuselect" style="background-color: #33CC99; height: 60px;">
+						<div class="device-count">
+							<strong>Device count</strong>
+							<input type=text value="1000" name="sensors" class="sensors" />	
+						</div>
+						<div class="messages-count">
+							<strong>Messages per sec per Device</strong>	
+							<input type=text value="1" name="messages" class="messages" />	
+						</div>
 					</div>
 					<div class="2u">
 					<div> <span> &nbsp</span></div>
@@ -57,6 +65,12 @@
 					</div>
 					<div class="2u chart-wrapper"  data-step="3" style="font-weight: normal" data-position="bottom" id="net-donations">
 						<div class="chart-title">  <strong> Total cost ($) </strong> </div>					
+					</div>
+
+					<div class="3u dc-data-count dc-chart"  data-step="4" data-intro="Selection widget displays the total rows available and rows currently selected in analysis"style="font-weight: normal" data-position="left"  id="row-selection">
+						<span  data-step="11" data-intro="Click to reset the filters for the analysis"style="font-weight: normal" data-position="left" > 
+							<a href='javascript:dc.filterAll();dc.redrawAll();'><font color="#33CC99">Reset All</font></a>
+						</span>
 					</div>
 				</div>
 
